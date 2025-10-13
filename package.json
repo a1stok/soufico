@@ -1,0 +1,62 @@
+{
+  "name": "soufico",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://your-app.web.app/",
+  "dependencies": {
+    "@stripe/react-stripe-js": "^3.1.1",
+    "@stripe/stripe-js": "^5.5.0",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase": "^11.1.0",
+    "mongodb": "^6.12.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.1.1",
+    "react-scripts": "5.0.1",
+    "stripe": "^17.5.0",
+    "web-vitals": "^4.2.4",
+    "serve": "^14.2.1",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"   
+  },
+  "scripts": {
+    "start": "node --max-old-space-size=512 server.js",
+    "start:production": "NODE_ENV=production node server.js",
+    "build": "npm ci && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start-backend": "cross-env MONGO_URI=mongodb://localhost:27017/soufico STRIPE_SECRET_KEY=sk_test_placeholder_key_please_set_in_environment PORT=3001 node server.js",
+    "test-mongodb": "cross-env MONGO_URI=mongodb://localhost:27017/soufico node test-mongodb.js",
+    "start-frontend": "react-scripts start",
+    "dev": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
+    "render-build": "npm install && npm run build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^7.5.0",
+    "cross-env": "^10.1.0",
+    "eslint": "^8.45.0",
+    "prettier": "^3.0.0"
+  }
+}

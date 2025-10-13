@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Disable clicking on elements where not needed */
+.no-click {
+  pointer-events: none;
+  cursor: default;
+}
+
+/* Disable clicking on images that shouldn't be interactive */
+img:not(.clickable) {
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Disable clicking on text elements that shouldn't be interactive */
+p, span, div:not(.clickable):not(.interactive) {
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Allow clicking on buttons and interactive elements */
+button, a, .clickable, .interactive, input, select, textarea {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* Disable clicking on background elements */
+.background-element {
+  pointer-events: none;
+}
+
+/* Disable text selection on non-interactive elements */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+

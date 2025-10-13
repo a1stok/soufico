@@ -1,0 +1,99 @@
+.login-page,
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Glass container now in shared/components.css */
+.glass-container {
+  width: 360px;
+}     
+
+.login-box {
+  text-align: center;
+}
+
+.login-box h2 {
+  color: #0d172a; 
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form inputs now use shared/forms.css */
+
+.options {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9rem;
+  color: #0d172a; 
+}
+
+.link-button {
+  width: 100%; 
+  text-align: center;
+  margin-top: 10px; 
+  padding: 12px; 
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  color: #0d172a;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link-button:hover {
+  background: rgba(13, 23, 42, 0.1);
+  color: #0d172a;
+}
+
+form button {
+  padding: 12px;
+  background: #0d172a;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  text-align: center;
+}
+
+form button:hover {
+  background: rgba(13, 23, 42, 0.7);
+  transform: scale(1.05);
+}
+
+form button:active {
+  transform: scale(1);
+}
+
+
+
+
+/* Error/success messages now in shared/components.css */
+
+.login-box p {
+  font-size: 0.9rem;
+  color: #0d172a; 
+}
+
+.login-box p a {
+  color: #0d172a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-box p a:hover {
+  color: rgba(13, 23, 42, 0.7);
+}

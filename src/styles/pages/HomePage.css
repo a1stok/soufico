@@ -1,0 +1,78 @@
+.home-container {
+  font-family: 'Jura', sans-serif;
+  background: linear-gradient(135deg, #fdfdfd, #cfcfdf);
+  min-height: 100vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.home-container p {
+  font-size: 1.8rem; 
+  margin-bottom: 40px;
+  color: var(--text-light);
+  text-align: center;
+  max-width: 800px;
+}
+
+.home-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.home-links a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.home-links a:hover {
+  color: var(--secondary-color);
+  transform: scale(1.05);
+}
+
+.cat-image-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.cat-image {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cat-caption {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #555;
+}
+.cat-image-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.mereal {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cat-caption {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #555;
+}

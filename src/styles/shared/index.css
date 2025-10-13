@@ -1,0 +1,90 @@
+/* Essential Shared Styles */
+
+/* CSS Variables */
+@import './variables.css';
+
+/* Typography */
+@import './typography.css';
+
+/* Buttons */
+@import './buttons.css';
+
+/* Forms */
+@import './forms.css';
+
+/* Layout */
+@import './layout.css';
+
+/* Components */
+@import './components.css';
+
+/* Shopping */
+@import './shopping.css';
+
+/* Global Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background: var(--bg-primary);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Focus styles */
+*:focus {
+  outline: 2px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Image optimization */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Link styles */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* List styles */
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Button reset */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Input reset */
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}

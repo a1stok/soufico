@@ -1,0 +1,37 @@
+services:
+  - type: web
+    name: music-movie-app
+    env: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm run start:production
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        fromDatabase:
+          name: app-db
+          property: connectionString
+      - key: STRIPE_SECRET_KEY
+        sync: false
+    healthCheckPath: /api/health
+    # Security: No sensitive data in YAML
+
+  - type: web
+    name: app-frontend
+    env: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npx serve -s build -l $PORT
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://your-backend.onrender.com
+      - key: PORT
+        value: 3000
+
+databases:
+  - name: app-db
+    plan: free
+    databaseName: musicmovieapp

@@ -1,0 +1,50 @@
+/* Essential Typography */
+.heading-1 {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xl);
+  font-family: var(--font-family);
+}
+
+.heading-2 {
+  font-size: var(--font-size-3xl);
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+  font-family: var(--font-family);
+}
+
+.heading-3 {
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-md);
+  font-family: var(--font-family);
+}
+
+.subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--text-color);
+  margin-bottom: var(--spacing-2xl);
+  text-align: center;
+  max-width: 800px;
+}
+
+.body-text {
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.error-text {
+  color: var(--error-color);
+  font-size: var(--font-size-base);
+  margin-top: var(--spacing-sm);
+}
+
+.success-text {
+  color: var(--success-color);
+  font-size: var(--font-size-base);
+  margin-top: var(--spacing-sm);
+}

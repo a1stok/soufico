@@ -1,0 +1,62 @@
+/* Glass container now in shared/components.css */
+.glass-container {
+  width: 360px;
+}
+
+.register-box {
+  text-align: center;
+}
+
+.register-box h2 {
+  color: #0d172a; 
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form inputs now use shared/forms.css */
+form input {
+  font-size: 0.9rem; /* Page-specific override */
+}
+
+form .register-button {
+  padding: 12px;
+  background: #0d172a; 
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form .register-button:hover {
+  background: rgba(13, 23, 42, 0.7); 
+  transform: scale(1.05);
+}
+
+form .register-button:active {
+  transform: scale(1);
+}
+
+/* Error/success messages now in shared/components.css */
+
+.register-box p {
+  font-size: 0.9rem;
+  color: #0d172a; 
+}
+
+.register-box p a {
+  color: #0d172a; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-box p a:hover {
+  color: rgba(13, 23, 42, 0.7); 
+}
