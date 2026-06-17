@@ -2,6 +2,9 @@
 
 Soufico is a modern web application that generates Spotify playlists based on movies, with integrated shopping functionality and user account management. Create personalized music experiences inspired by your favorite films while enjoying a seamless e-commerce platform.
 
+Check out the [demo and detailed walkthrough](https://kostianvs.xyz).
+*Navigate: Menu → Projects → Soufico → Case Study*
+
 ## Presentation
 
 ![Soufico Demo](public/Soufico.gif)
